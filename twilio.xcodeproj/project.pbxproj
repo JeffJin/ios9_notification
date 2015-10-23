@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A8CBEBC1BDA81B900FAD944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBEBB1BDA81B900FAD944 /* AppDelegate.swift */; };
+		3A8CBEBE1BDA81B900FAD944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBEBD1BDA81B900FAD944 /* ViewController.swift */; };
+		3A8CBEC11BDA81B900FAD944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CBEBF1BDA81B900FAD944 /* Main.storyboard */; };
+		3A8CBEC41BDA81B900FAD944 /* twilio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBEC21BDA81B900FAD944 /* twilio.xcdatamodeld */; };
+		3A8CBEC61BDA81B900FAD944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CBEC51BDA81B900FAD944 /* Assets.xcassets */; };
+		3A8CBEC91BDA81B900FAD944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CBEC71BDA81B900FAD944 /* LaunchScreen.storyboard */; };
+		3A8CBED41BDA81B900FAD944 /* twilioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBED31BDA81B900FAD944 /* twilioTests.swift */; };
+		3A8CBEDF1BDA81B900FAD944 /* twilioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBEDE1BDA81B900FAD944 /* twilioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A8CBED01BDA81B900FAD944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A8CBEB01BDA81B900FAD944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A8CBEB71BDA81B900FAD944;
+			remoteInfo = twilio;
+		};
+		3A8CBEDB1BDA81B900FAD944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A8CBEB01BDA81B900FAD944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A8CBEB71BDA81B900FAD944;
+			remoteInfo = twilio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A8CBEB81BDA81B900FAD944 /* twilio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twilio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8CBEBB1BDA81B900FAD944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A8CBEBD1BDA81B900FAD944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A8CBEC01BDA81B900FAD944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A8CBEC31BDA81B900FAD944 /* twilio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = twilio.xcdatamodel; sourceTree = "<group>"; };
+		3A8CBEC51BDA81B900FAD944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A8CBEC81BDA81B900FAD944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A8CBECA1BDA81B900FAD944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8CBECF1BDA81B900FAD944 /* twilioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twilioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8CBED31BDA81B900FAD944 /* twilioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twilioTests.swift; sourceTree = "<group>"; };
+		3A8CBED51BDA81B900FAD944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8CBEDA1BDA81B900FAD944 /* twilioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twilioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8CBEDE1BDA81B900FAD944 /* twilioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twilioUITests.swift; sourceTree = "<group>"; };
+		3A8CBEE01BDA81B900FAD944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A8CBEB51BDA81B900FAD944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CBECC1BDA81B900FAD944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CBED71BDA81B900FAD944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A8CBEAF1BDA81B900FAD944 = {
+			isa = PBXGroup;
+			children = (
+				3A8CBEBA1BDA81B900FAD944 /* twilio */,
+				3A8CBED21BDA81B900FAD944 /* twilioTests */,
+				3A8CBEDD1BDA81B900FAD944 /* twilioUITests */,
+				3A8CBEB91BDA81B900FAD944 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A8CBEB91BDA81B900FAD944 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CBEB81BDA81B900FAD944 /* twilio.app */,
+				3A8CBECF1BDA81B900FAD944 /* twilioTests.xctest */,
+				3A8CBEDA1BDA81B900FAD944 /* twilioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A8CBEBA1BDA81B900FAD944 /* twilio */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CBEBB1BDA81B900FAD944 /* AppDelegate.swift */,
+				3A8CBEBD1BDA81B900FAD944 /* ViewController.swift */,
+				3A8CBEBF1BDA81B900FAD944 /* Main.storyboard */,
+				3A8CBEC51BDA81B900FAD944 /* Assets.xcassets */,
+				3A8CBEC71BDA81B900FAD944 /* LaunchScreen.storyboard */,
+				3A8CBECA1BDA81B900FAD944 /* Info.plist */,
+				3A8CBEC21BDA81B900FAD944 /* twilio.xcdatamodeld */,
+			);
+			path = twilio;
+			sourceTree = "<group>";
+		};
+		3A8CBED21BDA81B900FAD944 /* twilioTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CBED31BDA81B900FAD944 /* twilioTests.swift */,
+				3A8CBED51BDA81B900FAD944 /* Info.plist */,
+			);
+			path = twilioTests;
+			sourceTree = "<group>";
+		};
+		3A8CBEDD1BDA81B900FAD944 /* twilioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CBEDE1BDA81B900FAD944 /* twilioUITests.swift */,
+				3A8CBEE01BDA81B900FAD944 /* Info.plist */,
+			);
+			path = twilioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A8CBEB71BDA81B900FAD944 /* twilio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8CBEE31BDA81B900FAD944 /* Build configuration list for PBXNativeTarget "twilio" */;
+			buildPhases = (
+				3A8CBEB41BDA81B900FAD944 /* Sources */,
+				3A8CBEB51BDA81B900FAD944 /* Frameworks */,
+				3A8CBEB61BDA81B900FAD944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = twilio;
+			productName = twilio;
+			productReference = 3A8CBEB81BDA81B900FAD944 /* twilio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A8CBECE1BDA81B900FAD944 /* twilioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8CBEE61BDA81B900FAD944 /* Build configuration list for PBXNativeTarget "twilioTests" */;
+			buildPhases = (
+				3A8CBECB1BDA81B900FAD944 /* Sources */,
+				3A8CBECC1BDA81B900FAD944 /* Frameworks */,
+				3A8CBECD1BDA81B900FAD944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A8CBED11BDA81B900FAD944 /* PBXTargetDependency */,
+			);
+			name = twilioTests;
+			productName = twilioTests;
+			productReference = 3A8CBECF1BDA81B900FAD944 /* twilioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A8CBED91BDA81B900FAD944 /* twilioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8CBEE91BDA81B900FAD944 /* Build configuration list for PBXNativeTarget "twilioUITests" */;
+			buildPhases = (
+				3A8CBED61BDA81B900FAD944 /* Sources */,
+				3A8CBED71BDA81B900FAD944 /* Frameworks */,
+				3A8CBED81BDA81B900FAD944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A8CBEDC1BDA81B900FAD944 /* PBXTargetDependency */,
+			);
+			name = twilioUITests;
+			productName = twilioUITests;
+			productReference = 3A8CBEDA1BDA81B900FAD944 /* twilioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A8CBEB01BDA81B900FAD944 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "eWorkspace Solutions Inc.";
+				TargetAttributes = {
+					3A8CBEB71BDA81B900FAD944 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					3A8CBECE1BDA81B900FAD944 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 3A8CBEB71BDA81B900FAD944;
+					};
+					3A8CBED91BDA81B900FAD944 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 3A8CBEB71BDA81B900FAD944;
+					};
+				};
+			};
+			buildConfigurationList = 3A8CBEB31BDA81B900FAD944 /* Build configuration list for PBXProject "twilio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A8CBEAF1BDA81B900FAD944;
+			productRefGroup = 3A8CBEB91BDA81B900FAD944 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A8CBEB71BDA81B900FAD944 /* twilio */,
+				3A8CBECE1BDA81B900FAD944 /* twilioTests */,
+				3A8CBED91BDA81B900FAD944 /* twilioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A8CBEB61BDA81B900FAD944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8CBEC91BDA81B900FAD944 /* LaunchScreen.storyboard in Resources */,
+				3A8CBEC61BDA81B900FAD944 /* Assets.xcassets in Resources */,
+				3A8CBEC11BDA81B900FAD944 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CBECD1BDA81B900FAD944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CBED81BDA81B900FAD944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A8CBEB41BDA81B900FAD944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8CBEBE1BDA81B900FAD944 /* ViewController.swift in Sources */,
+				3A8CBEC41BDA81B900FAD944 /* twilio.xcdatamodeld in Sources */,
+				3A8CBEBC1BDA81B900FAD944 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CBECB1BDA81B900FAD944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8CBED41BDA81B900FAD944 /* twilioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CBED61BDA81B900FAD944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8CBEDF1BDA81B900FAD944 /* twilioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A8CBED11BDA81B900FAD944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A8CBEB71BDA81B900FAD944 /* twilio */;
+			targetProxy = 3A8CBED01BDA81B900FAD944 /* PBXContainerItemProxy */;
+		};
+		3A8CBEDC1BDA81B900FAD944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A8CBEB71BDA81B900FAD944 /* twilio */;
+			targetProxy = 3A8CBEDB1BDA81B900FAD944 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A8CBEBF1BDA81B900FAD944 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8CBEC01BDA81B900FAD944 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A8CBEC71BDA81B900FAD944 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8CBEC81BDA81B900FAD944 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A8CBEE11BDA81B900FAD944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A8CBEE21BDA81B900FAD944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A8CBEE41BDA81B900FAD944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = twilio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.eworks.twilio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A8CBEE51BDA81B900FAD944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = twilio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.eworks.twilio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A8CBEE71BDA81B900FAD944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = twilioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.eworks.twilioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twilio.app/twilio";
+			};
+			name = Debug;
+		};
+		3A8CBEE81BDA81B900FAD944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = twilioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.eworks.twilioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twilio.app/twilio";
+			};
+			name = Release;
+		};
+		3A8CBEEA1BDA81B900FAD944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = twilioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.eworks.twilioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = twilio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3A8CBEEB1BDA81B900FAD944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = twilioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.eworks.twilioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = twilio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A8CBEB31BDA81B900FAD944 /* Build configuration list for PBXProject "twilio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8CBEE11BDA81B900FAD944 /* Debug */,
+				3A8CBEE21BDA81B900FAD944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8CBEE31BDA81B900FAD944 /* Build configuration list for PBXNativeTarget "twilio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8CBEE41BDA81B900FAD944 /* Debug */,
+				3A8CBEE51BDA81B900FAD944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A8CBEE61BDA81B900FAD944 /* Build configuration list for PBXNativeTarget "twilioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8CBEE71BDA81B900FAD944 /* Debug */,
+				3A8CBEE81BDA81B900FAD944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A8CBEE91BDA81B900FAD944 /* Build configuration list for PBXNativeTarget "twilioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8CBEEA1BDA81B900FAD944 /* Debug */,
+				3A8CBEEB1BDA81B900FAD944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A8CBEC21BDA81B900FAD944 /* twilio.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A8CBEC31BDA81B900FAD944 /* twilio.xcdatamodel */,
+			);
+			currentVersion = 3A8CBEC31BDA81B900FAD944 /* twilio.xcdatamodel */;
+			path = twilio.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A8CBEB01BDA81B900FAD944 /* Project object */;
+}
