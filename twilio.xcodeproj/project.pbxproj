@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3A8CBEBC1BDA81B900FAD944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBEBB1BDA81B900FAD944 /* AppDelegate.swift */; };
-		3A8CBEBE1BDA81B900FAD944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBEBD1BDA81B900FAD944 /* ViewController.swift */; };
 		3A8CBEC11BDA81B900FAD944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CBEBF1BDA81B900FAD944 /* Main.storyboard */; };
 		3A8CBEC41BDA81B900FAD944 /* twilio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBEC21BDA81B900FAD944 /* twilio.xcdatamodeld */; };
 		3A8CBEC61BDA81B900FAD944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CBEC51BDA81B900FAD944 /* Assets.xcassets */; };
@@ -17,8 +16,8 @@
 		3A8CBEDF1BDA81B900FAD944 /* twilioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBEDE1BDA81B900FAD944 /* twilioUITests.swift */; };
 		3A8CC1871BDA855900FAD944 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8CC17C1BDA852700FAD944 /* Result.framework */; };
 		3A8CC1881BDA855900FAD944 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8CC17C1BDA852700FAD944 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3A8CC18C1BDA856500FAD944 /* ReactiveCocoa-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8CC14A1BDA850300FAD944 /* ReactiveCocoa-iOS.framework */; };
-		3A8CC18D1BDA856500FAD944 /* ReactiveCocoa-iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8CC14A1BDA850300FAD944 /* ReactiveCocoa-iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A8CC18C1BDA856500FAD944 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8CC14A1BDA850300FAD944 /* ReactiveCocoa.framework */; };
+		3A8CC18D1BDA856500FAD944 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8CC14A1BDA850300FAD944 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A8CC1C61BDAE29C00FAD944 /* EventNac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CC1C01BDAE29C00FAD944 /* EventNac.swift */; };
 		3A8CC1C71BDAE29C00FAD944 /* EventNacImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CC1C11BDAE29C00FAD944 /* EventNacImpl.swift */; };
 		3A8CC1DB1BDAE9FE00FAD944 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CC1CA1BDAE9FE00FAD944 /* Attachment.swift */; };
@@ -28,6 +27,11 @@
 		3A8CC1DF1BDAE9FE00FAD944 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CC1CE1BDAE9FE00FAD944 /* User.swift */; };
 		3A8CC1E01BDAE9FE00FAD944 /* EventDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CC1D01BDAE9FE00FAD944 /* EventDto.swift */; };
 		3A8CC1E11BDAE9FE00FAD944 /* ScheduleSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CC1D11BDAE9FE00FAD944 /* ScheduleSearchResults.swift */; };
+		3AE072B01BECCF430001CDE2 /* TodoTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072AF1BECCF430001CDE2 /* TodoTableTableViewController.swift */; };
+		3AE072B31BECCF8B0001CDE2 /* TodoSchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072B21BECCF8B0001CDE2 /* TodoSchedulingViewController.swift */; };
+		3AE072B61BECD3B10001CDE2 /* SearchVmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072B51BECD3B10001CDE2 /* SearchVmService.swift */; };
+		3AE072B81BEDEF790001CDE2 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072B71BEDEF790001CDE2 /* TodoItem.swift */; };
+		3AE072BA1BEDEFD30001CDE2 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072B91BEDEFD30001CDE2 /* TodoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,7 +171,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3A8CC1881BDA855900FAD944 /* Result.framework in Embed Frameworks */,
-				3A8CC18D1BDA856500FAD944 /* ReactiveCocoa-iOS.framework in Embed Frameworks */,
+				3A8CC18D1BDA856500FAD944 /* ReactiveCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +181,6 @@
 /* Begin PBXFileReference section */
 		3A8CBEB81BDA81B900FAD944 /* twilio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twilio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8CBEBB1BDA81B900FAD944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A8CBEBD1BDA81B900FAD944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A8CBEC01BDA81B900FAD944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A8CBEC31BDA81B900FAD944 /* twilio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = twilio.xcdatamodel; sourceTree = "<group>"; };
 		3A8CBEC51BDA81B900FAD944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +203,11 @@
 		3A8CC1CE1BDAE9FE00FAD944 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3A8CC1D01BDAE9FE00FAD944 /* EventDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDto.swift; sourceTree = "<group>"; };
 		3A8CC1D11BDAE9FE00FAD944 /* ScheduleSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleSearchResults.swift; sourceTree = "<group>"; };
+		3AE072AF1BECCF430001CDE2 /* TodoTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoTableTableViewController.swift; path = Views/TodoTableTableViewController.swift; sourceTree = "<group>"; };
+		3AE072B21BECCF8B0001CDE2 /* TodoSchedulingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoSchedulingViewController.swift; path = Views/TodoSchedulingViewController.swift; sourceTree = "<group>"; };
+		3AE072B51BECD3B10001CDE2 /* SearchVmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchVmService.swift; path = ViewModels/SearchVmService.swift; sourceTree = "<group>"; };
+		3AE072B71BEDEF790001CDE2 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		3AE072B91BEDEFD30001CDE2 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A8CC1871BDA855900FAD944 /* Result.framework in Frameworks */,
-				3A8CC18C1BDA856500FAD944 /* ReactiveCocoa-iOS.framework in Frameworks */,
+				3A8CC18C1BDA856500FAD944 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,9 +262,9 @@
 		3A8CBEBA1BDA81B900FAD944 /* twilio */ = {
 			isa = PBXGroup;
 			children = (
+				3AE072B11BECCF4D0001CDE2 /* Views */,
 				3A8CC1B91BDAE29C00FAD944 /* Services */,
 				3A8CBEBB1BDA81B900FAD944 /* AppDelegate.swift */,
-				3A8CBEBD1BDA81B900FAD944 /* ViewController.swift */,
 				3A8CBEBF1BDA81B900FAD944 /* Main.storyboard */,
 				3A8CBEC51BDA81B900FAD944 /* Assets.xcassets */,
 				3A8CBEC71BDA81B900FAD944 /* LaunchScreen.storyboard */,
@@ -287,9 +295,9 @@
 		3A8CC13D1BDA850300FAD944 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A8CC1461BDA850300FAD944 /* ReactiveCocoa-Mac.framework */,
+				3A8CC1461BDA850300FAD944 /* ReactiveCocoa.framework */,
 				3A8CC1481BDA850300FAD944 /* ReactiveCocoa-MacTests.xctest */,
-				3A8CC14A1BDA850300FAD944 /* ReactiveCocoa-iOS.framework */,
+				3A8CC14A1BDA850300FAD944 /* ReactiveCocoa.framework */,
 				3A8CC14C1BDA850300FAD944 /* ReactiveCocoa-iOSTests.xctest */,
 				3A8CC14E1BDA850300FAD944 /* ReactiveCocoa-watchOS.framework */,
 				3A8CC1501BDA850300FAD944 /* ReactiveCocoa-tvOS.framework */,
@@ -315,6 +323,7 @@
 		3A8CC1B91BDAE29C00FAD944 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3AE072B41BECD3750001CDE2 /* ViewModels */,
 				3A8CC1C81BDAE9FE00FAD944 /* Models */,
 				3A8CC1BF1BDAE29C00FAD944 /* NetworkAccess */,
 			);
@@ -356,8 +365,27 @@
 			children = (
 				3A8CC1D01BDAE9FE00FAD944 /* EventDto.swift */,
 				3A8CC1D11BDAE9FE00FAD944 /* ScheduleSearchResults.swift */,
+				3AE072B71BEDEF790001CDE2 /* TodoItem.swift */,
+				3AE072B91BEDEFD30001CDE2 /* TodoList.swift */,
 			);
 			path = Dto;
+			sourceTree = "<group>";
+		};
+		3AE072B11BECCF4D0001CDE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AE072AF1BECCF430001CDE2 /* TodoTableTableViewController.swift */,
+				3AE072B21BECCF8B0001CDE2 /* TodoSchedulingViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3AE072B41BECD3750001CDE2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3AE072B51BECD3B10001CDE2 /* SearchVmService.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,10 +501,9 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3A8CC1461BDA850300FAD944 /* ReactiveCocoa-Mac.framework */ = {
+		3A8CC1461BDA850300FAD944 /* ReactiveCocoa.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = "ReactiveCocoa-Mac.framework";
 			path = ReactiveCocoa.framework;
 			remoteRef = 3A8CC1451BDA850300FAD944 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -488,10 +515,9 @@
 			remoteRef = 3A8CC1471BDA850300FAD944 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A8CC14A1BDA850300FAD944 /* ReactiveCocoa-iOS.framework */ = {
+		3A8CC14A1BDA850300FAD944 /* ReactiveCocoa.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = "ReactiveCocoa-iOS.framework";
 			path = ReactiveCocoa.framework;
 			remoteRef = 3A8CC1491BDA850300FAD944 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -611,12 +637,16 @@
 			files = (
 				3A8CC1DD1BDAE9FE00FAD944 /* Event.swift in Sources */,
 				3A8CC1C61BDAE29C00FAD944 /* EventNac.swift in Sources */,
-				3A8CBEBE1BDA81B900FAD944 /* ViewController.swift in Sources */,
+				3AE072B01BECCF430001CDE2 /* TodoTableTableViewController.swift in Sources */,
 				3A8CC1DC1BDAE9FE00FAD944 /* Entity.swift in Sources */,
 				3A8CC1E01BDAE9FE00FAD944 /* EventDto.swift in Sources */,
 				3A8CC1DE1BDAE9FE00FAD944 /* Location.swift in Sources */,
 				3A8CBEC41BDA81B900FAD944 /* twilio.xcdatamodeld in Sources */,
+				3AE072B31BECCF8B0001CDE2 /* TodoSchedulingViewController.swift in Sources */,
 				3A8CBEBC1BDA81B900FAD944 /* AppDelegate.swift in Sources */,
+				3AE072B61BECD3B10001CDE2 /* SearchVmService.swift in Sources */,
+				3AE072B81BEDEF790001CDE2 /* TodoItem.swift in Sources */,
+				3AE072BA1BEDEFD30001CDE2 /* TodoList.swift in Sources */,
 				3A8CC1DB1BDAE9FE00FAD944 /* Attachment.swift in Sources */,
 				3A8CC1DF1BDAE9FE00FAD944 /* User.swift in Sources */,
 				3A8CC1C71BDAE29C00FAD944 /* EventNacImpl.swift in Sources */,
@@ -857,6 +887,7 @@
 				3A8CBEE51BDA81B900FAD944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A8CBEE61BDA81B900FAD944 /* Build configuration list for PBXNativeTarget "twilioTests" */ = {
 			isa = XCConfigurationList;
@@ -865,6 +896,7 @@
 				3A8CBEE81BDA81B900FAD944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A8CBEE91BDA81B900FAD944 /* Build configuration list for PBXNativeTarget "twilioUITests" */ = {
 			isa = XCConfigurationList;
@@ -873,6 +905,7 @@
 				3A8CBEEB1BDA81B900FAD944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
