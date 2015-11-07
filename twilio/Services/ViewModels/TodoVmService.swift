@@ -1,26 +1,30 @@
 //
-//  TodoList.swift
+//  TodoVmService.swift
 //  twilio
 //
 //  Created by Zhengyuan Jin on 2015-11-07.
 //  Copyright © 2015 eWorkspace Solutions Inc. All rights reserved.
 //
 
+
 import Foundation
 import UIKit
+import ReactiveCocoa
 
-class TodoList {
-    class var instance : TodoList {
+public class TodoVmService {
+    class var instance : TodoVmService {
         
         struct Static {
-            static let sharedInstance : TodoList = TodoList()
+            static let sharedInstance : TodoVmService = TodoVmService()
         }
         return Static.sharedInstance
     }
     
     private let ITEMS_KEY = "todoItems"
     
-    func addItem(item: TodoItem) { // persist a representation of this todo item in NSUserDefaults
+    func addItem(item: TodoItem) {
+        // persist a representation of this todo item in NSUserDefaults
+        // TODO save into core data
         var todoDictionary = NSUserDefaults.standardUserDefaults().dictionaryForKey(ITEMS_KEY) ?? Dictionary() // if todoItems hasn't been set in user defaults, initialize todoDictionary to an empty dictionary using nil-coalescing operator (??)
         
         todoDictionary[item.UUID] = ["deadline": item.deadline, "title": item.title, "UUID": item.UUID] // store NSData representation of todo item in dictionary with UUID as key
@@ -59,13 +63,15 @@ class TodoList {
     }
     
     func allItems() -> [TodoItem] {
+        //TODO retrieve it from coredata
         let todoDictionary = NSUserDefaults.standardUserDefaults().dictionaryForKey(ITEMS_KEY) ?? [:]
         let items = Array(todoDictionary.values)
         return items.map({TodoItem(deadline: $0["deadline"] as! NSDate, title: $0["title"] as! String, UUID: $0["UUID"] as! String!)})
         
-//            .sorted({(left: TodoItem, right:TodoItem) -> Bool in
-//                (left.deadline.compare(right.deadline) == .OrderedAscending)
-//            })
-
+        //            .sorted({(left: TodoItem, right:TodoItem) -> Bool in
+        //                (left.deadline.compare(right.deadline) == .OrderedAscending)
+        //            })
+        
     }
+
 }

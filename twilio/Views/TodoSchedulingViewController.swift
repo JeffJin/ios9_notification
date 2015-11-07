@@ -14,7 +14,7 @@ class TodoSchedulingViewController: UIViewController {
 
     @IBAction func savePressed(sender: UIButton) {
         let todoItem = TodoItem(deadline: deadlinePicker.date, title: titleField.text!, UUID: NSUUID().UUIDString)
-        TodoList.instance.addItem(todoItem) // schedule a local notification to persist this item
+        TodoVmService.instance.addItem(todoItem) // schedule a local notification to persist this item
         self.navigationController?.popToRootViewControllerAnimated(true) // return to list view
     }
     

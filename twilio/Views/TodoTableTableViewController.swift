@@ -39,6 +39,7 @@ class TodoTableTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("todoCell", forIndexPath: indexPath) // retrieve the prototype cell (subtitle style)
         let todoItem = todoItems[indexPath.row] as TodoItem
+        //main text
         cell.textLabel?.text = todoItem.title as String!
         if (todoItem.isOverdue) { // the current time is later than the to-do item's deadline
             cell.detailTextLabel?.textColor = UIColor.redColor()
@@ -48,6 +49,7 @@ class TodoTableTableViewController: UITableViewController {
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "'Due' MMM dd 'at' h:mm a" // example: "Due Jan 01 at 12:00 PM"
+        //subtext
         cell.detailTextLabel?.text = dateFormatter.stringFromDate(todoItem.deadline)
         return cell
     }
@@ -67,7 +69,7 @@ class TodoTableTableViewController: UITableViewController {
             // Delete the row from the data source
             let item = todoItems.removeAtIndex(indexPath.row) // remove TodoItem from notifications array, assign removed item to 'item'
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            TodoList.instance.removeItem(item) // delete backing property list entry and unschedule local notification (if it still exists)
+            TodoVmService.instance.removeItem(item) // delete backing property list entry and unschedule local notification (if it still exists)
             self.navigationItem.rightBarButtonItem!.enabled = true // we definitely have under 64 notifications scheduled now, make sure 'add' button is enabled
             NSLog("Total items in list are \(todoItems.count)")
 
@@ -110,11 +112,11 @@ class TodoTableTableViewController: UITableViewController {
     }
     
     func refreshList() {
-        todoItems = TodoList.instance.allItems()
+        todoItems = TodoVmService.instance.allItems()
         if (todoItems.count >= 64) {
             self.navigationItem.rightBarButtonItem!.enabled = false // disable 'add' button
         }
-        NSLog("Total items in list are \(todoItems.count)")
+        NSLog("refreshList :: total items in list are \(todoItems.count)")
         tableView.reloadData()
     }
 }

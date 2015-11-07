@@ -31,7 +31,7 @@
 		3AE072B31BECCF8B0001CDE2 /* TodoSchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072B21BECCF8B0001CDE2 /* TodoSchedulingViewController.swift */; };
 		3AE072B61BECD3B10001CDE2 /* SearchVmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072B51BECD3B10001CDE2 /* SearchVmService.swift */; };
 		3AE072B81BEDEF790001CDE2 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072B71BEDEF790001CDE2 /* TodoItem.swift */; };
-		3AE072BA1BEDEFD30001CDE2 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072B91BEDEFD30001CDE2 /* TodoList.swift */; };
+		3AE072BE1BEE403D0001CDE2 /* TodoVmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE072BD1BEE403D0001CDE2 /* TodoVmService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,7 +207,7 @@
 		3AE072B21BECCF8B0001CDE2 /* TodoSchedulingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoSchedulingViewController.swift; path = Views/TodoSchedulingViewController.swift; sourceTree = "<group>"; };
 		3AE072B51BECD3B10001CDE2 /* SearchVmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchVmService.swift; path = ViewModels/SearchVmService.swift; sourceTree = "<group>"; };
 		3AE072B71BEDEF790001CDE2 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
-		3AE072B91BEDEFD30001CDE2 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		3AE072BD1BEE403D0001CDE2 /* TodoVmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoVmService.swift; path = ViewModels/TodoVmService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,8 +299,8 @@
 				3A8CC1481BDA850300FAD944 /* ReactiveCocoa-MacTests.xctest */,
 				3A8CC14A1BDA850300FAD944 /* ReactiveCocoa.framework */,
 				3A8CC14C1BDA850300FAD944 /* ReactiveCocoa-iOSTests.xctest */,
-				3A8CC14E1BDA850300FAD944 /* ReactiveCocoa-watchOS.framework */,
-				3A8CC1501BDA850300FAD944 /* ReactiveCocoa-tvOS.framework */,
+				3A8CC14E1BDA850300FAD944 /* ReactiveCocoa.framework */,
+				3A8CC1501BDA850300FAD944 /* ReactiveCocoa.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,7 +366,6 @@
 				3A8CC1D01BDAE9FE00FAD944 /* EventDto.swift */,
 				3A8CC1D11BDAE9FE00FAD944 /* ScheduleSearchResults.swift */,
 				3AE072B71BEDEF790001CDE2 /* TodoItem.swift */,
-				3AE072B91BEDEFD30001CDE2 /* TodoList.swift */,
 			);
 			path = Dto;
 			sourceTree = "<group>";
@@ -384,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				3AE072B51BECD3B10001CDE2 /* SearchVmService.swift */,
+				3AE072BD1BEE403D0001CDE2 /* TodoVmService.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -529,18 +529,16 @@
 			remoteRef = 3A8CC14B1BDA850300FAD944 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A8CC14E1BDA850300FAD944 /* ReactiveCocoa-watchOS.framework */ = {
+		3A8CC14E1BDA850300FAD944 /* ReactiveCocoa.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = "ReactiveCocoa-watchOS.framework";
 			path = ReactiveCocoa.framework;
 			remoteRef = 3A8CC14D1BDA850300FAD944 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A8CC1501BDA850300FAD944 /* ReactiveCocoa-tvOS.framework */ = {
+		3A8CC1501BDA850300FAD944 /* ReactiveCocoa.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = "ReactiveCocoa-tvOS.framework";
 			path = ReactiveCocoa.framework;
 			remoteRef = 3A8CC14F1BDA850300FAD944 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -640,13 +638,13 @@
 				3AE072B01BECCF430001CDE2 /* TodoTableTableViewController.swift in Sources */,
 				3A8CC1DC1BDAE9FE00FAD944 /* Entity.swift in Sources */,
 				3A8CC1E01BDAE9FE00FAD944 /* EventDto.swift in Sources */,
+				3AE072BE1BEE403D0001CDE2 /* TodoVmService.swift in Sources */,
 				3A8CC1DE1BDAE9FE00FAD944 /* Location.swift in Sources */,
 				3A8CBEC41BDA81B900FAD944 /* twilio.xcdatamodeld in Sources */,
 				3AE072B31BECCF8B0001CDE2 /* TodoSchedulingViewController.swift in Sources */,
 				3A8CBEBC1BDA81B900FAD944 /* AppDelegate.swift in Sources */,
 				3AE072B61BECD3B10001CDE2 /* SearchVmService.swift in Sources */,
 				3AE072B81BEDEF790001CDE2 /* TodoItem.swift in Sources */,
-				3AE072BA1BEDEFD30001CDE2 /* TodoList.swift in Sources */,
 				3A8CC1DB1BDAE9FE00FAD944 /* Attachment.swift in Sources */,
 				3A8CC1DF1BDAE9FE00FAD944 /* User.swift in Sources */,
 				3A8CC1C71BDAE29C00FAD944 /* EventNacImpl.swift in Sources */,
