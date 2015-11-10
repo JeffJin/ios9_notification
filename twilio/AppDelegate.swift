@@ -16,10 +16,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        NSLog("registerUserNotificationSettings...")
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound, .Badge], categories: nil))
-        // types are UIUserNotificationType members
+        let completeAction = UIMutableUserNotificationAction()
+        completeAction.identifier = "COMPLETE_TODO" // the unique identifier for this action
+        completeAction.title = "Complete" // title for the action button
+        completeAction.activationMode = .Background // UIUserNotificationActivationMode.Background - don't bring app to foreground
+        completeAction.authenticationRequired = false // don't require unlocking before performing action
+        completeAction.destructive = true // display action in red
+        
+        let remindAction = UIMutableUserNotificationAction()
+        remindAction.identifier = "REMIND"
+        remindAction.title = "Remind in 30 minutes"
+        remindAction.activationMode = .Background
+        remindAction.destructive = false
+        
+        let todoCategory = UIMutableUserNotificationCategory() // notification categories allow us to create groups of actions that we can associate with a notification
+        todoCategory.identifier = "TODO_CATEGORY"
+        todoCategory.setActions([remindAction, completeAction], forContext: .Default) // UIUserNotificationActionContext.Default (4 actions max)
+        todoCategory.setActions([completeAction, remindAction], forContext: .Minimal) // UIUserNotificationActionContext.Minimal - for when space is limited (2 actions max)
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: Set([todoCategory]))) // we're now providing a set containing our category as an argument
         return true
     }
     
@@ -28,9 +43,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSNotificationCenter.defaultCenter().postNotificationName("TodoListShouldRefresh", object: self)
     }
     
-    func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+        let item = TodoItem(deadline: notification.fireDate!, title: notification.userInfo!["title"] as! String, UUID: notification.userInfo!["UUID"] as! String!)
+        switch (identifier!) {
+        case "COMPLETE_TODO":
+            TodoVmService.instance.removeItem(item)
+        case "REMIND":
+            TodoVmService.instance.scheduleReminderforItem(item)
+        default: // switch statements must be exhaustive - this condition should never be met
+            NSLog("Error: unexpected notification action identifier!")
+        }
+        completionHandler() // per developer documentation, app will terminate if we fail to call this
+    }
+    
+    func applicationWillResignActive(application: UIApplication) { // fired when user quits the application
+        let todoItems: [TodoItem] = TodoVmService.instance.allItems() // retrieve list of all to-do items
+        let overdueItems = todoItems.filter({ (todoItem) -> Bool in
+            return todoItem.deadline.compare(NSDate()) != .OrderedDescending
+        })
+        UIApplication.sharedApplication().applicationIconBadgeNumber = overdueItems.count // set our badge number to number of overdue items
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
